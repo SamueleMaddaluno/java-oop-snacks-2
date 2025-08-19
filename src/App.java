@@ -1,5 +1,5 @@
 
-import ContoBancario.ContoRisparmio;
+import Utenti.Utente;
 
 
 
@@ -22,12 +22,17 @@ public class App {
         // c1.preleva(50);
 
         // c1.visualizzaSaldo();
-        ContoRisparmio cont = new ContoRisparmio();
-        cont.deposita(150);
-        cont.visualizzaSaldo();
-        cont.preleva(10);
-        cont.visualizzaSaldo();
-        cont.applicaInteressi();
+        // ContoRisparmio cont = new ContoRisparmio();
+        // cont.deposita(150);
+        // cont.visualizzaSaldo();
+        // cont.preleva(10);
+        // cont.visualizzaSaldo();
+        // cont.applicaInteressi();
+
+        Utente u1 = new Utente();
+        Utente u2 = new Utente();
+        Utente u3 = new Utente();
+        System.out.println("il numero untenti è "+ Utente.getNumeroUtenti());
         
     }
 }
@@ -36,13 +41,7 @@ public class App {
 
 
 
-// Es 3)
-// Consegna:
-// Crea una classe Utente con attributo nome.
-// Aggiungi un attributo statico numeroUtenti che tiene il conto delle istanze create.
-// In ogni costruttore, incrementa numeroUtenti.
-// Crea un metodo statico getNumeroUtenti() che restituisce il totale.
-// Nel main, crea 3 utenti e stampa il numero totale usando il metodo statico.
+
 // Es 4)
 // Consegna:
 // Crea una classe astratta Figura con un metodo astratto calcolaArea().
