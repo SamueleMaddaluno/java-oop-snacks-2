@@ -1,6 +1,7 @@
 
-
-
+import MissioniSpaziali.MissioneCommerciale;
+import MissioniSpaziali.MissioneScientifica;
+import MissioniSpaziali.MissioneSpaziale;
 
 
 public class App {
@@ -32,24 +33,17 @@ public class App {
     //     Utente u2 = new Utente();
     //     Utente u3 = new Utente();
     //     System.out.println("il numero untenti è "+ Utente.getNumeroUtenti());
+
+        MissioneSpaziale msp1 = new MissioneSpaziale("Odio Marte");
+        MissioneScientifica msc1 = new MissioneScientifica("depurazione", "cercare nuove energie sostenibili");
+        MissioneCommerciale mc1 = new MissioneCommerciale("soldi", "Barilla");
+        MissioneSpaziale msp2 = new MissioneScientifica("caos", "cercare nuove armi");
+        
+        System.out.println(msp1.stampaDettagli());
+        System.out.println(msc1.stampaDettagli());
+        System.out.println(mc1.stampaDettagli());
+        System.out.println(msp2.stampaDettagli());
+        System.out.println(MissioneSpaziale.contatore);
         
     }
 }
-
-
-
-
-
-
-
-// Es 5)
-// consegna:
-// Crea una classe MissioneSpaziale con i seguenti campi:
-// nomeMissione (privato)
-// idMissione (final, auto-generato con un contatore statico condiviso tra tutte le missioni)
-// Crea un metodo stampaDettagli() che stampa il nome e l'ID.
-// Crea due sottoclassi:
-// MissioneScientifica con un campo aggiuntivo obiettivo
-// MissioneCommerciale con un campo aziendaPartner
-// In ognuna, sovrascrivi stampaDettagli() per includere i campi specifici.
-// Nel main, crea una lista di missioni miste, stampale, e mostra il numero totale delle missioni create (tramite un metodo static della classe base).
